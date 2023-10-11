@@ -1,0 +1,22 @@
+
+body{
+font-family: "DM Mono", Arial, serif;
+font-size: smaller;
+}
+
+.upperDiv{
+    background-color: #f38d0d;
+   height: 100vh;
+}
+.name{
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 50px;
+}
+
+.fa-rotate-5 {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
