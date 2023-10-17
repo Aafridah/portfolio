@@ -1,282 +1,408 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
-        integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.rtl.min.css"
-        integrity="sha512-C9DqRFOOTJ5aY4nPjM2zWBP1leudW4G1Sdb5fjRqdP/Vvfyx0bgittDhurMhu/LlXw3oC/QRlPz47qQPTYl+FA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-reboot.min.css"
-        integrity="sha512-ZHQv/ue+hZQ+Jd+JKhxic17TUraZ9UwS6G7RcwSrQEE9j/m/AGRwj1OmYrkP43H0B/Wf0pg3hfbHCMAS6SGHOg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-reboot.rtl.min.css"
-        integrity="sha512-8DTDj1o84gmw86S6Qrh//DhOl73pYrkrV5rD3/JDj9VZk6nwijhYPhees3NQQM22A6UqOXBX09ULKNSurfETHw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-utilities.min.css"
-        integrity="sha512-IspcQcJxnKFKfac3SzzLPXyGt77Twdkh1QmoLJlk+VDWCeGNVf7rCl/Srop+WwzX3S7IS2nxe9sfqLuMergysw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-utilities.rtl.min.css"
-        integrity="sha512-g/9zc34RrAHk9cSFEodVsDR+TjDAhw9+VjWHnbK6kZe6sK4xTpPJ6cqJYd3WXfFmQuNLIkhDetQdm6fOOzj/nQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
-        integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css"
-        integrity="sha512-SRg0d/3qeXy0utrb7F4+4jkFHhzdyvqjAd2i9ub0zWrPS80PoRaAtzmbMeVRYtApxoEcE6tcFZaHRY5UbwrTaw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
+      integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.rtl.min.css"
+      integrity="sha512-C9DqRFOOTJ5aY4nPjM2zWBP1leudW4G1Sdb5fjRqdP/Vvfyx0bgittDhurMhu/LlXw3oC/QRlPz47qQPTYl+FA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-reboot.min.css"
+      integrity="sha512-ZHQv/ue+hZQ+Jd+JKhxic17TUraZ9UwS6G7RcwSrQEE9j/m/AGRwj1OmYrkP43H0B/Wf0pg3hfbHCMAS6SGHOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-reboot.rtl.min.css"
+      integrity="sha512-8DTDj1o84gmw86S6Qrh//DhOl73pYrkrV5rD3/JDj9VZk6nwijhYPhees3NQQM22A6UqOXBX09ULKNSurfETHw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-utilities.min.css"
+      integrity="sha512-IspcQcJxnKFKfac3SzzLPXyGt77Twdkh1QmoLJlk+VDWCeGNVf7rCl/Srop+WwzX3S7IS2nxe9sfqLuMergysw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-utilities.rtl.min.css"
+      integrity="sha512-g/9zc34RrAHk9cSFEodVsDR+TjDAhw9+VjWHnbK6kZe6sK4xTpPJ6cqJYd3WXfFmQuNLIkhDetQdm6fOOzj/nQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css"
+      integrity="sha512-SRg0d/3qeXy0utrb7F4+4jkFHhzdyvqjAd2i9ub0zWrPS80PoRaAtzmbMeVRYtApxoEcE6tcFZaHRY5UbwrTaw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!--google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Mr+Dafoe&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Mr+Dafoe&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- custom css -->
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/media-query.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="upperDiv parallax">
-        <div class="overlay"></div>
-        <div class="container text-light centered-div">
-            <div class="row row-cols-1 justify-content-center text-center">
-                <div class="profilePic mb-3 z-1">
-                    <img src="./img/avatar.png" class="image-fluid rounded-circle"
-                        alt="profile-pic" style="width: 200px; height: 200px;">
-                </div>
+      <div class="overlay"></div>
+      <div class="container text-light centered-div">
+        <div class="row row-cols-1 justify-content-center text-center">
+          <div class="profilePic mb-3 z-1">
+            <img
+              src="./img/avatar.png"
+              class="image-fluid rounded-circle"
+              alt="profile-pic"
+              style="width: 200px; height: 200px"
+            />
+          </div>
 
-
-                <div class="">
-                    <h1 class="fa-rotate-5 col-12">
-                        <span class="name">
-                            -Aafridah Manzoor-
-                        </span>
-                    </h1>
-                </div>
-                <div class="z-1 p-2 fs-6">
-                    Full-Stack Developer
-                </div>
-                <div class="socialIcons">
-                    <a href="#"><i class="text-light fa-brands fa-facebook fa-spin fa-spin-reverse fa-2xl"></i></a>
-                    <a href="#"><i class="text-light fa-brands fa-linkedin fa-spin fa-spin-reverse fa-2xl"></i></a>
-                    <a href="#"><i class="text-light fa-brands fa-github fa-spin fa-spin-reverse fa-2xl"></i> </a>
-                </div>
-            </div>
-
-
-
-
+          <div class="">
+            <h1 class="fa-rotate-5 col-12">
+              <span class="name"> -Aafridah Manzoor- </span>
+            </h1>
+          </div>
+          <div class="z-1 p-2 fs-6">Full-Stack Developer</div>
+          <div class="socialIcons">
+            <a href="#"
+              ><i
+                class="text-light fa-brands fa-facebook fa-spin fa-spin-reverse fa-2xl"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="text-light fa-brands fa-linkedin fa-spin fa-spin-reverse fa-2xl"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="text-light fa-brands fa-github fa-spin fa-spin-reverse fa-2xl"
+              ></i>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
     <div class="aboutMeSection container">
-        <div class="card border-light mb-3 px-2">
-            <div class="card-body">
-                <h1 class="card-title fw-bolder text-center p-2">About Me</h1>
-                <div class="row">
-                    <div class="col-lg-5 fs-6 p-0">
-                        <table class="table table-borderless p-0">
-                            <tr>
-                                <td class="fw-semibold">Name:</td>
-                                <td class="text-muted">Aafridah Manzoor</td>
-                            </tr>
-                            <tr>
-                                <td class="fw-semibold">Phone: </td>
-                                <td class="text-muted">+91 9070 573 939</td>
-                            </tr>
-                            <tr>
-                                <td class="fw-semibold">Email: </td>
-                                <td class="text-muted">
-                                    <address class="flex-wrap">aafridahmanzoor@gmail.com</address>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="fw-semibold">Address: </td>
-                                <td class="text-muted">
-                                    <address>198 West 21th Street, Suite 721 New York NY 10016</address>
-                                </td>
-                            </tr>
-                        </table>
-
-
-                    </div>
-                    <div class="col-lg-7">
-                        <h2>Hello There!</h2>
-                        <p class="fs-6">I would describe myself as a collaborative and solution-driven software engineer
-                            with over two years of experience working with designers, developers,
-                            and programmers holding a degree in Computer Science from University Of Kashmir</p>
-                    </div>
-                </div>
+      <div class="card border-light mb-3 px-2">
+        <div class="card-body">
+          <h1 class="card-title fw-bolder text-center p-2">About Me</h1>
+          <div class="row">
+            <div class="col-lg-5 fs-6 p-0">
+              <table class="table table-borderless p-0">
+                <tr>
+                  <td class="fw-semibold">Name:</td>
+                  <td class="text-muted">Aafridah Manzoor</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">Phone:</td>
+                  <td class="text-muted">+91 9070 573 939</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">Email:</td>
+                  <td class="text-muted">
+                    <address class="flex-wrap">
+                      aafridahmanzoor@gmail.com
+                    </address>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">Address:</td>
+                  <td class="text-muted">
+                    <address>
+                      198 West 21th Street, Suite 721 New York NY 10016
+                    </address>
+                  </td>
+                </tr>
+              </table>
             </div>
+            <div class="col-lg-7">
+              <h2>Hello There!</h2>
+              <p class="fs-6">
+                I would describe myself as a collaborative and solution-driven
+                software engineer with over two years of experience working with
+                designers, developers, and programmers holding a degree in
+                Computer Science from University Of Kashmir
+              </p>
+            </div>
+          </div>
         </div>
-
+      </div>
     </div>
     <div class="resumeSection container">
-        <h1 class="text-center fw-bolder p-2">My Resume</h1>
-        <div class="workExperience">
-            <div class="text-uppercase bg-secondary-subtle mx-auto text-center" style="width:fit-content">
-                <h6 class="p-2">Work Experience</h6>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline-container timeline-left">
-                    <div class="timeline-badge timeline-badge-left"><i class="fa-solid fa-briefcase fa-2xl "></i></div>
-                    <div class="timeline-dot-badge">
-
-                    </div>
-                    <div class="timeline-heading">
-                        <h3 class="timeline-title">Junior SDE</h3>
-                        <small class="text-muted">Almuqeet Systems Pvt. Ltd. <br> 2021 - Current</small>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts.</p>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-right">
-                    <div class="timeline-badge timeline-badge-right"><i class="fa-solid fa-briefcase  fa-2xl "></i>
-                    </div>
-                    <div class="timeline-dot-badge">
-
-                    </div>
-                    <div class="timeline-heading">
-                        <h3 class="timeline-title">SDE Intern</h3>
-                        <small class="text-muted">Almuqeet Systems Pvt. Ltd. <br> Aug 2021 - Sept 2021</small>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts.</p>
-                    </div>
-                </div>
-                <div class="text-uppercase bg-secondary-subtle mx-auto  text-center" style="width:fit-content">
-                    <h6 class="p-2">Education</h6>
-                </div>
-                <div class="timeline-container timeline-left">
-                    <div class="timeline-badge timeline-badge-left"><i class="fa-solid fa-briefcase fa-2xl "></i></div>
-                    <div class="timeline-dot-badge">
-
-                    </div>
-                    <div class="timeline-heading">
-                        <h3 class="timeline-title">Masters of computer applications</h3>
-                        <small class="text-muted">University of Kashmir (CS) <br> 2020 - 2022</small>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts.</p>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-right">
-                    <div class="timeline-badge timeline-badge-right"><i class="fa-solid fa-briefcase  fa-2xl "></i>
-                    </div>
-                    <div class="timeline-dot-badge">
-
-                    </div>
-                    <div class="timeline-heading">
-                        <h3 class="timeline-title">Bachelors of computer applications</h3>
-                        <small class="text-muted">Govt. college for women <br> (M.A road Srinagar) <br> 2016 -
-                            2020</small>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts.</p>
-                    </div>
-                </div>
-
-            </div>
+      <h1 class="text-center fw-bolder p-2">My Resume</h1>
+      <div class="workExperience">
+        <div
+          class="text-uppercase bg-secondary-subtle mx-auto text-center"
+          style="width: fit-content"
+        >
+          <h6 class="p-2">Work Experience</h6>
         </div>
 
+        <div class="timeline">
+          <div class="timeline-container timeline-left">
+            <div class="timeline-badge timeline-badge-left">
+              <i class="fa-solid fa-briefcase fa-2xl"></i>
+            </div>
+            <div class="timeline-dot-badge"></div>
+            <div class="timeline-heading">
+              <h3 class="timeline-title">Junior SDE</h3>
+              <small class="text-muted"
+                >Almuqeet Systems Pvt. Ltd. <br />
+                2021 - Current</small
+              >
+            </div>
+            <div class="timeline-body">
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-container timeline-right">
+            <div class="timeline-badge timeline-badge-right">
+              <i class="fa-solid fa-briefcase fa-2xl"></i>
+            </div>
+            <div class="timeline-dot-badge"></div>
+            <div class="timeline-heading">
+              <h3 class="timeline-title">SDE Intern</h3>
+              <small class="text-muted"
+                >Almuqeet Systems Pvt. Ltd. <br />
+                Aug 2021 - Sept 2021</small
+              >
+            </div>
+            <div class="timeline-body">
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </div>
+          <div
+            class="text-uppercase bg-secondary-subtle mx-auto text-center"
+            style="width: fit-content"
+          >
+            <h6 class="p-2">Education</h6>
+          </div>
+          <div class="timeline-container timeline-left">
+            <div class="timeline-badge timeline-badge-left">
+              <i class="fa-solid fa-briefcase fa-2xl"></i>
+            </div>
+            <div class="timeline-dot-badge"></div>
+            <div class="timeline-heading">
+              <h3 class="timeline-title">Masters of computer applications</h3>
+              <small class="text-muted"
+                >University of Kashmir (CS) <br />
+                2020 - 2022</small
+              >
+            </div>
+            <div class="timeline-body">
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-container timeline-right">
+            <div class="timeline-badge timeline-badge-right">
+              <i class="fa-solid fa-briefcase fa-2xl"></i>
+            </div>
+            <div class="timeline-dot-badge"></div>
+            <div class="timeline-heading">
+              <h3 class="timeline-title">Bachelors of computer applications</h3>
+              <small class="text-muted"
+                >Govt. college for women <br />
+                (M.A road Srinagar) <br />
+                2016 - 2020</small
+              >
+            </div>
+            <div class="timeline-body">
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="servicesSection">
-        <div class="container">
-            <h1 class="text-center p-5">My Services</h1>
-            <div class="row row-cols-1 row-cols-lg-4 justify-content-center">
-                <div class="col p-3">
-                    <div class="serviceIcon">
-                        <i class="fa-solid fa-brush fa-2xl"></i>
-                    </div>
-                    <div class="serviceHeading">
-                        <h3>Web Development</h3>
-                    </div>
-                    <div class="serviceDescription">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit harum sequi reprehenderit
-                        cupiditate eum hic fugiat animi rerum et. Magni natus nisi eum rerum fugit alias tempore magnam
-                        doloremque officia!
-                    </div>
-                </div>
-                <div class="col p-3">
-                    <div class="serviceIcon">
-                        <i class="fa-solid fa-brush fa-2xl"></i>
-                    </div>
-                    <div class="serviceHeading">
-                        <h3>API Integration</h3>
-                    </div>
-                    <div class="serviceDescription">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit harum sequi reprehenderit
-                        cupiditate eum hic fugiat animi rerum et. Magni natus nisi eum rerum fugit alias tempore magnam
-                        doloremque officia!
-                    </div>
-                </div>
-                <div class="col p-3">
-                    <div class="serviceIcon">
-                        <i class="fa-solid fa-brush fa-2xl"></i>
-                    </div>
-                    <div class="serviceHeading">
-                        <h3>Background Services</h3>
-                    </div>
-                    <div class="serviceDescription">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit harum sequi reprehenderit
-                        cupiditate eum hic fugiat animi rerum et. Magni natus nisi eum rerum fugit alias tempore magnam
-                        doloremque officia!
-                    </div>
-                </div>
-                <div class="col p-3">
-                    <div class="serviceIcon">
-                        <i class="fa-solid fa-brush fa-2xl"></i>
-                    </div>
-                    <div class="serviceHeading">
-                        <h3>Back-end Development</h3>
-                    </div>
-                    <div class="serviceDescription">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit harum sequi reprehenderit
-                        cupiditate eum hic fugiat animi rerum et. Magni natus nisi eum rerum fugit alias tempore magnam
-                        doloremque officia!
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="text-center p-5">My Services</h1>
+        <div class="row row-cols-1 row-cols-lg-4 justify-content-center">
+          <div class="col p-3">
+            <div class="serviceIcon">
+              <i class="fa-solid fa-brush fa-2xl"></i>
             </div>
+            <div class="serviceHeading">
+              <h3>Web Development</h3>
+            </div>
+            <div class="serviceDescription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+              harum sequi reprehenderit cupiditate eum hic fugiat animi rerum
+              et. Magni natus nisi eum rerum fugit alias tempore magnam
+              doloremque officia!
+            </div>
+          </div>
+          <div class="col p-3">
+            <div class="serviceIcon">
+              <i class="fa-solid fa-brush fa-2xl"></i>
+            </div>
+            <div class="serviceHeading">
+              <h3>API Integration</h3>
+            </div>
+            <div class="serviceDescription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+              harum sequi reprehenderit cupiditate eum hic fugiat animi rerum
+              et. Magni natus nisi eum rerum fugit alias tempore magnam
+              doloremque officia!
+            </div>
+          </div>
+          <div class="col p-3">
+            <div class="serviceIcon">
+              <i class="fa-solid fa-brush fa-2xl"></i>
+            </div>
+            <div class="serviceHeading">
+              <h3>Background Services</h3>
+            </div>
+            <div class="serviceDescription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+              harum sequi reprehenderit cupiditate eum hic fugiat animi rerum
+              et. Magni natus nisi eum rerum fugit alias tempore magnam
+              doloremque officia!
+            </div>
+          </div>
+          <div class="col p-3">
+            <div class="serviceIcon">
+              <i class="fa-solid fa-brush fa-2xl"></i>
+            </div>
+            <div class="serviceHeading">
+              <h3>Back-end Development</h3>
+            </div>
+            <div class="serviceDescription">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+              harum sequi reprehenderit cupiditate eum hic fugiat animi rerum
+              et. Magni natus nisi eum rerum fugit alias tempore magnam
+              doloremque officia!
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="skillsSection">
-
+      <div class="container">
+        <h1 class="text-center p-5">Skills</h1>
+        <div class="row">
+          <canvas id="skillChart" style="width: 100%;"></canvas>
+        </div>
+      </div>
     </div>
     <div class="workSection">
-
+      <div class="container">
+        <h1 class="text-center p-5">Projects</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="./img/sms_switch_image.webp" class="card-img-top" style="height:300px;" alt="sms_switch_image">
+              <div class="card-body">
+                <h5 class="card-title">aSMSC Phoenix</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./img/sms_image.png" class="card-img-top" style="height:300px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">aSMSC v3</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./img/ecom-image.jpg" class="card-img-top" style="height:300px;"  alt="...">
+              <div class="card-body">
+                <h5 class="card-title">E-Commerce</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="contactMeSection">
+    <div class="contactMeSection"></div>
+  </body>
 
-    </div>
-</body>
-
-<script src="./lib/jquery/jquery.min.js"></script>
-<script src="./lib/jquery/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/jquery/jquery.slim.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
     integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
     integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.esm.min.js"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.esm.min.js"
     integrity="sha512-9IAuCQeqbsF/CP2TJ7avKUW9/+dODxnKuPyj42O++oHkjGuuqj3ZLzTFtCihuRjb5G/aGefieF21ZoRG5kwzwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- font awesome -->
-<script src="https://kit.fontawesome.com/b9786221c4.js" crossorigin="anonymous"></script>
-
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- font awesome -->
+  <script
+    src="https://kit.fontawesome.com/b9786221c4.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <body>
+  <!-- custom js -->
+  <script src="./js/main.js"></script>
 </html>
