@@ -67,9 +67,10 @@
                                     padding: 10px 50px;
                                   }
 
-                                  /* .timeline-left {
-                                    left:0;
-                                  } */
+                                  .timeline-left {
+                                    text-align: end;
+                                  }
+
                                   .timeline-right {
                                     left: 50%;
                                   }
@@ -87,7 +88,6 @@
                                   .timeline-badge-left {
                                     position: absolute;
                                     right: -27px;
-                                    top: 32px;
                                     z-index: 1;
                                   }
 
