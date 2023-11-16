@@ -97,7 +97,7 @@
                                     z-index: 1;
                                   }
 
-                                  .timeline-left :nth-of-type(3) ::after {
+                                  .timeline-left :nth-of-type(4) ::after {
                                     content: '';
                                     position: absolute;
                                     width: 2px;
@@ -105,10 +105,10 @@
                                     background: rgb(167, 161, 161);
                                     right: -5px;
                                     top: 0;
-                                    z-index: -1;
+                                    z-index: 0;
                                   }
 
-                                  .timeline-right :nth-of-type(3) ::before {
+                                  .timeline-right :nth-of-type(4) ::before {
                                     content: '';
                                     position: absolute;
                                     width: 2px;
@@ -116,7 +116,7 @@
                                     background: rgb(167, 161, 161);
                                     left: 3px;
                                     top: 0;
-                                    z-index: -1;
+                                    z-index: 0;
                                   }
 
 
@@ -160,4 +160,18 @@
                                     background: rgb(255, 144, 0);
                                     color: white;
                                     text-align: center;
+                                  }
+
+                                  .cards {
+
+                                    transition: all 0.5s ease;
+                                    cursor: pointer;
+
+
+                                  }
+
+                                  .cards:hover {
+
+                                    box-shadow: 5px 6px 6px 2px #5e6164;
+                                    transform: scale(1.1);
                                   }
