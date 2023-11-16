@@ -1,438 +1,436 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portfolio</title>
+  
+  <!-- bootstrap -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
+  integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.rtl.min.css"
+  integrity="sha512-C9DqRFOOTJ5aY4nPjM2zWBP1leudW4G1Sdb5fjRqdP/Vvfyx0bgittDhurMhu/LlXw3oC/QRlPz47qQPTYl+FA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-reboot.min.css"
+  integrity="sha512-ZHQv/ue+hZQ+Jd+JKhxic17TUraZ9UwS6G7RcwSrQEE9j/m/AGRwj1OmYrkP43H0B/Wf0pg3hfbHCMAS6SGHOg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-reboot.rtl.min.css"
+  integrity="sha512-8DTDj1o84gmw86S6Qrh//DhOl73pYrkrV5rD3/JDj9VZk6nwijhYPhees3NQQM22A6UqOXBX09ULKNSurfETHw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-utilities.min.css"
+  integrity="sha512-IspcQcJxnKFKfac3SzzLPXyGt77Twdkh1QmoLJlk+VDWCeGNVf7rCl/Srop+WwzX3S7IS2nxe9sfqLuMergysw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-utilities.rtl.min.css"
+  integrity="sha512-g/9zc34RrAHk9cSFEodVsDR+TjDAhw9+VjWHnbK6kZe6sK4xTpPJ6cqJYd3WXfFmQuNLIkhDetQdm6fOOzj/nQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+  integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css"
+  integrity="sha512-SRg0d/3qeXy0utrb7F4+4jkFHhzdyvqjAd2i9ub0zWrPS80PoRaAtzmbMeVRYtApxoEcE6tcFZaHRY5UbwrTaw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  
+  <!--google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Mr+Dafoe&display=swap"
+  rel="stylesheet"
+  />
+  
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/media-query.css" />
+</head>
 
-    <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
-      integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.rtl.min.css"
-      integrity="sha512-C9DqRFOOTJ5aY4nPjM2zWBP1leudW4G1Sdb5fjRqdP/Vvfyx0bgittDhurMhu/LlXw3oC/QRlPz47qQPTYl+FA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-reboot.min.css"
-      integrity="sha512-ZHQv/ue+hZQ+Jd+JKhxic17TUraZ9UwS6G7RcwSrQEE9j/m/AGRwj1OmYrkP43H0B/Wf0pg3hfbHCMAS6SGHOg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-reboot.rtl.min.css"
-      integrity="sha512-8DTDj1o84gmw86S6Qrh//DhOl73pYrkrV5rD3/JDj9VZk6nwijhYPhees3NQQM22A6UqOXBX09ULKNSurfETHw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-utilities.min.css"
-      integrity="sha512-IspcQcJxnKFKfac3SzzLPXyGt77Twdkh1QmoLJlk+VDWCeGNVf7rCl/Srop+WwzX3S7IS2nxe9sfqLuMergysw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-utilities.rtl.min.css"
-      integrity="sha512-g/9zc34RrAHk9cSFEodVsDR+TjDAhw9+VjWHnbK6kZe6sK4xTpPJ6cqJYd3WXfFmQuNLIkhDetQdm6fOOzj/nQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
-      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css"
-      integrity="sha512-SRg0d/3qeXy0utrb7F4+4jkFHhzdyvqjAd2i9ub0zWrPS80PoRaAtzmbMeVRYtApxoEcE6tcFZaHRY5UbwrTaw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!--google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Mr+Dafoe&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- custom css -->
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/media-query.css" />
-  </head>
-
-  <body>
-    <div class="upperDiv parallax">
-      <div class="overlay"></div>
-      <div class="container text-light centered-div">
-        <div class="row row-cols-1 justify-content-center text-center">
-          <div class="profilePic mb-3 z-1">
-            <img
-              src="./img/avatar.png"
-              class="image-fluid rounded-circle"
-              alt="profile-pic"
-              style="width: 200px; height: 200px"
-            />
+<body>
+  <div class="upperDiv parallax">
+    <div class="overlay"></div>
+    <div class="container text-light centered-div">
+      <div class="row row-cols-1 justify-content-center text-center">
+        <div class="profilePic mb-3 z-1">
+          <img
+          src="./img/avatar.png"
+          class="image-fluid rounded-circle"
+          alt="profile-pic"
+          style="width: 200px; height: 200px"
+          />
+        </div>
+        
+        <div class="">
+          <h1 class="fa-rotate-5 col-12">
+            <span class="name"> -Aafridah Manzoor- </span>
+          </h1>
+        </div>
+        <div class="z-1 p-2 fs-6">Full-Stack Developer</div>
+        <div class="socialIcons">
+          <a href="https://stackoverflow.com/users/18024069/aafridah"
+          ><i
+          class="text-light fa-brands fa-stack-overflow fa-spin fa-spin-reverse fa-2xl"
+          ></i
+          ></a>
+          <a href="https://www.linkedin.com/in/aafridah-manzoor-4189911b1/"
+          ><i
+          class="text-light fa-brands fa-linkedin fa-spin fa-spin-reverse fa-2xl"
+          ></i
+          ></a>
+          <a href="https://github.com/Aafridah"
+          ><i
+          class="text-light fa-brands fa-github fa-spin fa-spin-reverse fa-2xl"
+          ></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="aboutMeSection container">
+  <h1 class="card-title fw-bolder text-center p-2">About Me</h1>
+  <div class="row">
+    <div class="col-12 col-xl-6 fs-6">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Full Name</p>
+            </div>
+            <div class="col-sm-9">
+              <p class="text-muted mb-0">Aafridah Manzoor</p>
+            </div>
           </div>
-
-          <div class="">
-            <h1 class="fa-rotate-5 col-12">
-              <span class="name"> -Aafridah Manzoor- </span>
-            </h1>
+          <hr>
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Email</p>
+            </div>
+            <div class="col-sm-9">
+              <p class="text-muted mb-0">aafridahmanzoor@gmail.com</p>
+            </div>
           </div>
-          <div class="z-1 p-2 fs-6">Full-Stack Developer</div>
-          <div class="socialIcons">
-            <a href="https://stackoverflow.com/users/18024069/aafridah"
-              ><i
-                class="text-light fa-brands fa-stack-overflow fa-spin fa-spin-reverse fa-2xl"
-              ></i
-            ></a>
-            <a href="https://www.linkedin.com/in/aafridah-manzoor-4189911b1/"
-              ><i
-                class="text-light fa-brands fa-linkedin fa-spin fa-spin-reverse fa-2xl"
-              ></i
-            ></a>
-            <a href="https://github.com/Aafridah"
-              ><i
-                class="text-light fa-brands fa-github fa-spin fa-spin-reverse fa-2xl"
-              ></i>
-            </a>
+          <hr>
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Phone</p>
+            </div>
+            <div class="col-sm-9">
+              <p class="text-muted mb-0">(+91) 9070573939</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Address</p>
+            </div>
+            <div class="col-sm-9">
+              <p class="text-muted mb-0">Muslimabad, B.K Pora, Srinagar</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="aboutMeSection container">
-          <h1 class="card-title fw-bolder text-center p-2">About Me</h1>
-          <div class="row">
-            <div class="col-lg-5 fs-6">
-              <div class="card mb-4">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <p class="mb-0">Full Name</p>
-                    </div>
-                    <div class="col-sm-9">
-                      <p class="text-muted mb-0">Aafridah Manzoor</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <p class="mb-0">Email</p>
-                    </div>
-                    <div class="col-sm-9">
-                      <p class="text-muted mb-0">aafridahmanzoor@gmail.com</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <p class="mb-0">Phone</p>
-                    </div>
-                    <div class="col-sm-9">
-                      <p class="text-muted mb-0">(+91) 9070573939</p>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <p class="mb-0">Address</p>
-                    </div>
-                    <div class="col-sm-9">
-                      <p class="text-muted mb-0">Muslimabad, B.K Pora, Srinagar</p>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-            <div class="col-lg-7">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Hello There!</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">I am Aafridah</h6>
-                  <p class="card-text">I would describe myself as a collaborative and solution-driven
-                    software engineer with over two years of experience working with
-                    designers, developers, and programmers holding a degree in
-                    Computer Science from University Of Kashmir.</p>
-                    <div class="row justify-content-end">   
-                      <div class="col-auto">
-                        <a href="./Documents/Aafridah_CV.pdf" download>
-                          <button type="button" class="btn btn-outline-info btn-lg ">Download CV</button></a>
-                      </div>                 
-                    </div>
-                    <div class="row pt-4">
-                      <div class="col-auto" style="padding-right: 0px;">                     
-                         <a href="https://instagram.com/_aafridah_?igshid=OGQ5ZDc2ODk2ZA==" ><i class="text-danger fa-brands fa-instagram fa-2xl"></i></a>
-                      </div>
-                      <div class="col-auto">                     
-                         <a href="https://pin.it/2nPBG9D" class="card-link"><i class="text-danger fa-brands fa-pinterest fa-2xl"></i></a>
-                      </div>
-                 
-                    </div>
-                      </div>
+    <div class="col-12 col-xl-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Hello There!</h5>
+          <h6 class="card-subtitle mb-2 text-muted">I am Aafridah</h6>
+          <p class="card-text">I would describe myself as a collaborative and solution-driven
+            software engineer with over two years of experience working with
+            designers, developers, and programmers holding a degree in
+            Computer Science from University Of Kashmir.</p>
+            <div class="row justify-content-between">  
+              <div class="col-auto align-self-center">
+                <a href="https://instagram.com/_aafridah_?igshid=OGQ5ZDc2ODk2ZA==" ><i class="text-danger fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="https://pin.it/2nPBG9D" class="card-link"><i class="text-danger fa-brands fa-pinterest fa-2xl"></i></a>
+                
+              </div> 
+              <div class="col-auto">
+                <a href="./Documents/Aafridah_CV.pdf" download>
+                  <button type="button" class="btn btn-outline-info btn-lg ">Download CV</button></a>
+                </div>                 
               </div>
               
             </div>
-         
-       
+          </div>
+          
+        </div>
+        
+        
       </div>
-  </div>
+    </div>
     <div class="resumeSection container">
       <h1 class="text-center fw-bolder p-2">My Resume</h1>
       <div class="workExperience">
         <div
-          class="text-uppercase bg-secondary-subtle mx-auto text-center"
-          style="width: fit-content"
+        class="text-uppercase bg-secondary-subtle mx-auto text-center"
+        style="width: fit-content"
         >
-          <h6 class="p-2">Work Experience</h6>
+        <h6 class="p-2">Work Experience</h6>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-container timeline-left">
+          <div class="timeline-badge timeline-badge-left">
+            <i class="fa-solid fa-briefcase fa-2xl"></i>
+          </div>
+          <div class="timeline-dot-badge"></div>
+          <div class="timeline-heading">
+            <h3 class="timeline-title">Junior SDE</h3>
+            <small class="text-muted"
+            >Almuqeet Systems Pvt. Ltd. <br />
+            2021 - Current</small
+            >
+          </div>
+          <div class="timeline-body">
+            <p> Working with CSS, HTML, and JavaScript, along with CSS preprocessors, to craft client-facing platforms.
+              Managing databases and servers. Coding for functionality across multiple languages and platforms.
+              Keeping up with emerging technology that may serve the business’ needs.
+              Prototyping minimal viable products for communication with company stakeholders.
+              
+            </p>
+          </div>
         </div>
-
-        <div class="timeline">
-          <div class="timeline-container timeline-left">
-            <div class="timeline-badge timeline-badge-left">
-              <i class="fa-solid fa-briefcase fa-2xl"></i>
-            </div>
-            <div class="timeline-dot-badge"></div>
-            <div class="timeline-heading">
-              <h3 class="timeline-title">Junior SDE</h3>
-              <small class="text-muted"
-                >Almuqeet Systems Pvt. Ltd. <br />
-                2021 - Current</small
-              >
-            </div>
-            <div class="timeline-body">
-              <p> Working with CSS, HTML, and JavaScript, along with CSS preprocessors, to craft client-facing platforms.
-    Managing databases and servers. Coding for functionality across multiple languages and platforms.
-    Keeping up with emerging technology that may serve the business’ needs.
-    Prototyping minimal viable products for communication with company stakeholders.
-
-              </p>
-            </div>
+        <div class="timeline-container timeline-right">
+          <div class="timeline-badge timeline-badge-right">
+            <i class="fa-solid fa-briefcase fa-2xl"></i>
           </div>
-          <div class="timeline-container timeline-right">
-            <div class="timeline-badge timeline-badge-right">
-              <i class="fa-solid fa-briefcase fa-2xl"></i>
-            </div>
-            <div class="timeline-dot-badge"></div>
-            <div class="timeline-heading">
-              <h3 class="timeline-title">SDE Intern</h3>
-              <small class="text-muted"
-                >Almuqeet Systems Pvt. Ltd. <br />
-                Aug 2021 - Sept 2021</small
-              >
-            </div>
-            <div class="timeline-body">
-              <p>
-                I built a basic web app, and all that it did was some CRUD (Create, Read, Update, Destroy) operations. 
-                Learned some programming principles and db Queries.
-              </p>
-            </div>
+          <div class="timeline-dot-badge"></div>
+          <div class="timeline-heading">
+            <h3 class="timeline-title">SDE Intern</h3>
+            <small class="text-muted"
+            >Almuqeet Systems Pvt. Ltd. <br />
+            Aug 2021 - Sept 2021</small
+            >
           </div>
-          <div
-            class="text-uppercase bg-secondary-subtle mx-auto text-center"
-            style="width: fit-content"
+          <div class="timeline-body">
+            <p>
+              I built a basic web app, and all that it did was some CRUD (Create, Read, Update, Destroy) operations. 
+              Learned some programming principles and db Queries.
+            </p>
+          </div>
+        </div>
+        <div
+        class="text-uppercase bg-secondary-subtle mx-auto text-center"
+        style="width: fit-content"
+        >
+        <h6 class="p-2">Education</h6>
+      </div>
+      <div class="timeline-container timeline-left">
+        <div class="timeline-badge timeline-badge-left">
+          <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+        </div>
+        <div class="timeline-dot-badge"></div>
+        <div class="timeline-heading">
+          <h3 class="timeline-title">Masters of computer applications</h3>
+          <small class="text-muted"
+          >University of Kashmir (CS) <br />
+          2020 - 2022</small
           >
-            <h6 class="p-2">Education</h6>
+        </div>
+        <div class="timeline-body">
+          <p> Advanced Software, hardware, and networking with the studies of IT, Data structures & Mathematics.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-container timeline-right">
+        <div class="timeline-badge timeline-badge-right">
+          <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+        </div>
+        <div class="timeline-dot-badge"></div>
+        <div class="timeline-heading">
+          <h3 class="timeline-title">Bachelors of computer applications</h3>
+          <small class="text-muted"
+          >Govt. college for women <br />
+          (M.A road Srinagar) <br />
+          2016 - 2020</small
+          >
+        </div>
+        <div class="timeline-body">
+          <p> Course includes database management systems, operating systems,
+            software engineering, web technology and languages such as C,
+            C++, HTML, Java etc
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="servicesSection">
+  <div class="container">
+    <h1 class="text-center p-5">My Services</h1>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center">
+      <div class="col p-3">
+        <div class="serviceIcon">
+          <i class="fa-solid fa-brush fa-2xl"></i>
+        </div>
+        <div class="serviceHeading">
+          <h3>Web Development</h3>
+        </div>
+        <div class="serviceDescription">
+          Developing a website for the Internet (World Wide Web) or an intranet (a private network)
+        </div>
+      </div>
+      <div class="col p-3">
+        <div class="serviceIcon">
+          <i class="fa-solid fa-link fa-2xl"></i>
+        </div>
+        <div class="serviceHeading">
+          <h3>API Integration</h3>
+        </div>
+        <div class="serviceDescription">
+          Connecting two or more applications or systems by using 
+          APIs (Application Programming Interfaces) to exchange data and perform 
+          actions
+        </div>
+      </div>
+      <div class="col p-3">
+        <div class="serviceIcon">
+          <i class="fa-solid fa-coffee fa-2xl"></i>
+        </div>
+        <div class="serviceHeading">
+          <h3>Background Services</h3>
+        </div>
+        <div class="serviceDescription">
+          Background services, also known as hosted services, 
+          are components in .NET Core applications that run in the background 
+          independently of user requests. They are implemented as long-running 
+          tasks that execute periodically or remain active throughout the application's 
+          lifetime. .NET Core provides a convenient and robust way to create and manage 
+          these services.
+        </div>
+      </div>
+      <div class="col p-3">
+        <div class="serviceIcon">
+          <i class="fa-solid fa-add fa-2xl"></i>
+        </div>
+        <div class="serviceHeading">
+          <h3>API Development</h3>
+        </div>
+        <div class="serviceDescription">
+          An API is the base of all the apps that deal with data or enable 
+          communication between two products or services. It empowers a mobile 
+          application or platform to share its data with other apps/platforms and 
+          ease the user experience without involving the developers. On the top of it, 
+          APIs eliminate the need to build a similar program or platform from scratch; 
+          you can use the existing one or some other app/platform. 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="skillsSection">
+  <div class="container mb-4">
+    <h1 class="text-center p-5">Skills</h1>
+    <div class="row">
+      <canvas id="skillChart" style="width: 100%;"></canvas>
+    </div>
+  </div>
+</div>
+<div class="workSection">
+  <div class="container">
+    <h1 class="text-center p-5">Projects</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col mb-4">
+        <div class="card h-100 cards">
+          <img src="./img/sms_switch_image.webp" class="card-img-top" style="height:300px;" alt="sms_switch_image">
+          <div class="card-body">
+            <h5 class="card-title">aSMSC Phoenix</h5>
+            <p class="card-text">aSMSC is a highly scalable and secure turnkey for SMS Service Providers who are looking to run a profitable <b>wholesale Bulk SMS</b>  operation anywhere in the world.</p>
           </div>
-          <div class="timeline-container timeline-left">
-            <div class="timeline-badge timeline-badge-left">
-              <i class="fa-solid fa-graduation-cap fa-2xl"></i>
-            </div>
-            <div class="timeline-dot-badge"></div>
-            <div class="timeline-heading">
-              <h3 class="timeline-title">Masters of computer applications</h3>
-              <small class="text-muted"
-                >University of Kashmir (CS) <br />
-                2020 - 2022</small
-              >
-            </div>
-            <div class="timeline-body">
-              <p> Advanced Software, hardware, and networking with the studies of IT, Data structures & Mathematics.
-              </p>
-            </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
-          <div class="timeline-container timeline-right">
-            <div class="timeline-badge timeline-badge-right">
-              <i class="fa-solid fa-graduation-cap fa-2xl"></i>
-            </div>
-            <div class="timeline-dot-badge"></div>
-            <div class="timeline-heading">
-              <h3 class="timeline-title">Bachelors of computer applications</h3>
-              <small class="text-muted"
-                >Govt. college for women <br />
-                (M.A road Srinagar) <br />
-                2016 - 2020</small
-              >
-            </div>
-            <div class="timeline-body">
-              <p> Course includes database management systems, operating systems,
-                 software engineering, web technology and languages such as C,
-                  C++, HTML, Java etc
-              </p>
-            </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100 cards">
+          <img src="./img/sms_image.png" class="card-img-top" style="height:300px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">aSMSC v3</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100 cards">
+          <img src="./img/ecom-image.jpg" class="card-img-top" style="height:300px;"  alt="...">
+          <div class="card-body">
+            <h5 class="card-title">E-Commerce</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
       </div>
     </div>
-    <div class="servicesSection">
-      <div class="container">
-        <h1 class="text-center p-5">My Services</h1>
-        <div class="row row-cols-1 row-cols-lg-4 justify-content-center">
-          <div class="col p-3">
-            <div class="serviceIcon">
-              <i class="fa-solid fa-brush fa-2xl"></i>
-            </div>
-            <div class="serviceHeading">
-              <h3>Web Development</h3>
-            </div>
-            <div class="serviceDescription">
-              Developing a website for the Internet (World Wide Web) or an intranet (a private network)
-            </div>
-          </div>
-          <div class="col p-3">
-            <div class="serviceIcon">
-              <i class="fa-solid fa-link fa-2xl"></i>
-            </div>
-            <div class="serviceHeading">
-              <h3>API Integration</h3>
-            </div>
-            <div class="serviceDescription">
-              Connecting two or more applications or systems by using 
-              APIs (Application Programming Interfaces) to exchange data and perform 
-              actions
-            </div>
-          </div>
-          <div class="col p-3">
-            <div class="serviceIcon">
-              <i class="fa-solid fa-coffee fa-2xl"></i>
-            </div>
-            <div class="serviceHeading">
-              <h3>Background Services</h3>
-            </div>
-            <div class="serviceDescription">
-              Background services, also known as hosted services, 
-              are components in .NET Core applications that run in the background 
-              independently of user requests. They are implemented as long-running 
-              tasks that execute periodically or remain active throughout the application's 
-              lifetime. .NET Core provides a convenient and robust way to create and manage 
-              these services.
-            </div>
-          </div>
-          <div class="col p-3">
-            <div class="serviceIcon">
-              <i class="fa-solid fa-add fa-2xl"></i>
-            </div>
-            <div class="serviceHeading">
-              <h3>API Development</h3>
-            </div>
-            <div class="serviceDescription">
-              An API is the base of all the apps that deal with data or enable 
-              communication between two products or services. It empowers a mobile 
-              application or platform to share its data with other apps/platforms and 
-              ease the user experience without involving the developers. On the top of it, 
-              APIs eliminate the need to build a similar program or platform from scratch; 
-              you can use the existing one or some other app/platform. 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="skillsSection">
-      <div class="container mb-4">
-        <h1 class="text-center p-5">Skills</h1>
-        <div class="row">
-          <canvas id="skillChart" style="width: 100%;"></canvas>
-        </div>
-      </div>
-    </div>
-    <div class="workSection">
-      <div class="container">
-        <h1 class="text-center p-5">Projects</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col mb-4">
-            <div class="card h-100 cards">
-              <img src="./img/sms_switch_image.webp" class="card-img-top" style="height:300px;" alt="sms_switch_image">
-              <div class="card-body">
-                <h5 class="card-title">aSMSC Phoenix</h5>
-                <p class="card-text">aSMSC is a highly scalable and secure turnkey for SMS Service Providers who are looking to run a profitable <b>wholesale Bulk SMS</b>  operation anywhere in the world.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card h-100 cards">
-              <img src="./img/sms_image.png" class="card-img-top" style="height:300px;" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">aSMSC v3</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card h-100 cards">
-              <img src="./img/ecom-image.jpg" class="card-img-top" style="height:300px;"  alt="...">
-              <div class="card-body">
-                <h5 class="card-title">E-Commerce</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="contactMeSection"></div>
-  </body>
+  </div>
+</div>
+<div class="contactMeSection"></div>
+</body>
 
-  <script src="./lib/jquery/jquery.min.js"></script>
-  <script src="./lib/jquery/jquery.slim.min.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
-    integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
-    integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.esm.min.js"
-    integrity="sha512-9IAuCQeqbsF/CP2TJ7avKUW9/+dODxnKuPyj42O++oHkjGuuqj3ZLzTFtCihuRjb5G/aGefieF21ZoRG5kwzwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <!-- font awesome -->
-  <script
-    src="https://kit.fontawesome.com/b9786221c4.js"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-  <body>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/jquery/jquery.slim.min.js"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.esm.min.js"
+integrity="sha512-9IAuCQeqbsF/CP2TJ7avKUW9/+dODxnKuPyj42O++oHkjGuuqj3ZLzTFtCihuRjb5G/aGefieF21ZoRG5kwzwA=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+<!-- font awesome -->
+<script
+src="https://kit.fontawesome.com/b9786221c4.js"
+crossorigin="anonymous"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
   <!-- custom js -->
   <script src="./js/main.js"></script>
-</html>
+  </html>
+  
