@@ -77,6 +77,7 @@
 </head>
 
 <body>
+  <a id="top"></a>
   <div class="upperDiv parallax">
     <div class="overlay"></div>
     <div class="container text-light centered-div">
@@ -359,48 +360,109 @@
 </div>
 <div class="workSection">
   <div class="container">
-    <h1 class="text-center p-5">Projects</h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <h1 class="text-center p-5">Work</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      
       <div class="col mb-4">
-        <div class="card h-100 cards">
-          <img src="./img/sms_switch_image.webp" class="card-img-top" style="height:300px;" alt="sms_switch_image">
-          <div class="card-body">
-            <h5 class="card-title">aSMSC Phoenix</h5>
-            <p class="card-text">aSMSC is a highly scalable and secure turnkey for SMS Service Providers who are looking to run a profitable <b>wholesale Bulk SMS</b>  operation anywhere in the world.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+        <div class="card cards h-100 workSectionCard" style="border-radius: 15px;">
+          <div class="card-body p-5 ">
+            
+            <div class="text-center mb-4 pb-2">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-quotes/bulb.webp"
+              alt="Bulb" width="100">
+            </div>
+            
+            <figure class="text-center mb-0 workSectionFigure">
+              <p class="pb-3">
+                <span class="lead">aSMSC is a highly scalable and secure turnkey for SMS Service Providers who are looking to run a profitable <b>wholesale Bulk SMS</b>  operation anywhere in the world.</span>
+              </p>
+              
+            </figure>
+            <div class="desc">
+              <h3>Project Name</h3>
+              <h5 style="color:#ff9000;">aSMSC Phoenix</h5>
+            </div>
           </div>
         </div>
       </div>
       <div class="col mb-4">
-        <div class="card h-100 cards">
-          <img src="./img/sms_image.png" class="card-img-top" style="height:300px;" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">aSMSC v3</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+        <div class="card cards h-100 workSectionCard" style="border-radius: 15px;">
+          <div class="card-body p-5">
+            
+            <div class="text-center mb-4 pb-2">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-quotes/bulb.webp"
+              alt="Bulb" width="100">
+            </div>
+            
+            <figure class="text-center mb-0 workSectionFigure">
+              <p class="pb-3">
+                <span class="lead">This card has supporting text below as a natural lead-in to additional content.</span>
+              </p>
+              
+            </figure>
+            <div class="desc">
+              <h3>Project Name</h3>
+              <h5 style="color:#ff9000;">aSMSC V3</h5>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col mb-4">
-        <div class="card h-100 cards">
-          <img src="./img/ecom-image.jpg" class="card-img-top" style="height:300px;"  alt="...">
-          <div class="card-body">
-            <h5 class="card-title">E-Commerce</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
+      
+    </div>
+  </div>
+</div>
+<div class="contactMeSection m-3 text-center">
+  <div class="container">
+    <h2>Contact</h2>
+    <form action="#">
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col  mb-2">
+          <input type="text" id="fname" class="form-control" placeholder="Your firstname">
         </div>
+        <div class="col  mb-2">
+          <input type="text" id="lname" class="form-control" placeholder="Your lastname">
+        </div>
+        <div class="col  mb-2">
+          <input type="text" id="email" class="form-control" placeholder="Your email address">
+        </div>
+        <div class="col  mb-2">
+          <input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+        </div>
+        
+      </div>
+      <div class="row  mb-2">
+        <div class="col-12 ">
+          <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Send Message" class="btn" style="color:white; background-color: #ff9000;">
+      </div>
+      
+    </form>	
+  </div>
+</div>
+<div class="footerSection">
+  <div class="container h-100">
+    <div class="row h-100 text-center align-content-center">
+      <div class="col-12 serviceIcon">
+        <i class="fa-solid fa-handshake fa-2xl"></i>
+      </div>
+      <div class="col-12">
+        <h2>Thankyou for your time.</h2>
       </div>
     </div>
   </div>
 </div>
-<div class="contactMeSection"></div>
+<a href="#top">
+  <div id="backToTop" class="backToTop" style="display:none">
+    <div class="backToTopIcon">
+      <i class="fa-solid fa-arrow-up fa-2xl"></i>
+    </div>
+  
+  </div>
+</a>
+
 </body>
 
 <script src="./lib/jquery/jquery.min.js"></script>

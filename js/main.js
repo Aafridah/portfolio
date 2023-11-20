@@ -8,12 +8,12 @@ var xValues = [
 ];
 var yValues = [70, 80, 60, 70, 60, 50];
 var barColors = [
-  "#3F556F",
-  "#d5c7ba",
-  "#2b283d",
-  "#bc724f",
-  "#7e3934",
-  "#7b86a4",
+  "#ff9000",
+  "#ff9000",
+  "#ff9000",
+  "#ff9000",
+  "#ff9000",
+  "#ff9000",
 ];
 /*[
   "#e2bef1",
@@ -56,3 +56,25 @@ new Chart("skillChart", {
     },
   },
 });
+
+// Get the button:
+let mybutton = document.getElementById("backToTop");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

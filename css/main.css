@@ -1,177 +1,215 @@
-                                  body {
-                                    font-family: "DM Mono", Arial, serif;
-                                    font-size: smaller;
-                                  }
+html {
+  scroll-behavior: smooth;
+}
 
-                                  .upperDiv {
-                                    height: 100vh;
-                                    position: relative;
+body {
+  font-family: "DM Mono", Arial, serif;
+  font-size: smaller;
+}
 
-                                  }
+.upperDiv {
+  height: 100vh;
+  position: relative;
 
-                                  .name {
-                                    font-family: 'Mr Dafoe', cursive;
-                                    font-size: 50px;
-                                  }
+}
 
-                                  .fa-rotate-5 {
-                                    -webkit-transform: rotate(-5deg);
-                                    -moz-transform: rotate(-5deg);
-                                    -ms-transform: rotate(-5deg);
-                                    -o-transform: rotate(-5deg);
-                                    transform: rotate(-5deg);
-                                  }
+.name {
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 50px;
+}
 
-                                  .parallax {
-                                    /* The image used */
-                                    background-image: url("./../img/study-lamp-laptop-wallpaper.jpg");
-                                    /* Set a specific height */
-                                    min-height: 500px;
+.fa-rotate-5 {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
 
-                                    /* Create the parallax scrolling effect */
-                                    background-attachment: fixed;
-                                    background-position: center;
-                                    background-repeat: no-repeat;
-                                    background-size: cover;
-                                  }
+.parallax {
+  /* The image used */
+  background-image: url("./../img/study-lamp-laptop-wallpaper.jpg");
+  /* Set a specific height */
+  min-height: 500px;
 
-                                  .overlay {
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    right: 0;
-                                    bottom: 0;
-                                    background-color: rgba(255, 144, 0, 0.9);
-                                    /* Black background with opacity */
-                                    z-index: 0;
-                                    /* Specify a stack order in case you're using a different order for other elements */
-                                  }
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-                                  .centered-div {
-                                    margin: 0;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 50%;
-                                    -ms-transform: translate(-50%, -50%);
-                                    transform: translate(-50%, -50%);
-                                  }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 144, 0, 0.9);
+  /* Black background with opacity */
+  z-index: 0;
+  /* Specify a stack order in case you're using a different order for other elements */
+}
 
-                                  .timeline {
-                                    position: relative;
-                                    max-width: 1200px;
-                                  }
+.centered-div {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
-                                  .timeline-container {
-                                    position: relative;
-                                    width: 50%;
-                                    padding: 10px 50px;
-                                  }
+.timeline {
+  position: relative;
+  max-width: 1200px;
+}
 
-                                  .timeline-left {
-                                    text-align: end;
-                                  }
+.timeline-container {
+  position: relative;
+  width: 50%;
+  padding: 10px 50px;
+}
 
-                                  .timeline-right {
-                                    left: 50%;
-                                  }
+.timeline-left {
+  text-align: end;
+}
 
-                                  .timeline-badge {
-                                    height: 50px;
-                                    width: 50px;
-                                    background: rgb(255, 144, 0);
-                                    border-radius: 100%;
-                                    text-align: center;
-                                    padding-top: 15px;
-                                    color: aliceblue
-                                  }
+.timeline-right {
+  left: 50%;
+}
 
-                                  .timeline-badge-left {
-                                    position: absolute;
-                                    right: -27px;
-                                    z-index: 1;
-                                  }
+.timeline-badge {
+  height: 50px;
+  width: 50px;
+  background: rgb(255, 144, 0);
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 15px;
+  color: aliceblue
+}
 
-                                  .timeline-badge-right {
-                                    position: absolute;
-                                    left: -23px;
-                                    z-index: 1;
-                                  }
+.timeline-badge-left {
+  position: absolute;
+  right: -27px;
+  z-index: 1;
+}
 
-                                  .timeline-left :nth-of-type(4) ::after {
-                                    content: '';
-                                    position: absolute;
-                                    width: 2px;
-                                    height: 100%;
-                                    background: rgb(167, 161, 161);
-                                    right: -5px;
-                                    top: 0;
-                                    z-index: 0;
-                                  }
+.timeline-badge-right {
+  position: absolute;
+  left: -23px;
+  z-index: 1;
+}
 
-                                  .timeline-right :nth-of-type(4) ::before {
-                                    content: '';
-                                    position: absolute;
-                                    width: 2px;
-                                    height: 100%;
-                                    background: rgb(167, 161, 161);
-                                    left: 3px;
-                                    top: 0;
-                                    z-index: 0;
-                                  }
+.timeline-left :nth-of-type(4) ::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: rgb(167, 161, 161);
+  right: -5px;
+  top: 0;
+  z-index: 0;
+}
 
-
-
-                                  .servicesSection {
-                                    background: rgb(255, 144, 0);
-                                    color: white;
-                                    text-align: center;
-                                  }
-
-                                  .serviceIcon {
-                                    height: 50px;
-                                    width: 50px;
-                                    background: #000;
-                                    border-radius: 100%;
-                                    text-align: center;
-                                    padding-top: 15px;
-                                    margin-left: auto;
-                                    margin-right: auto;
-                                  }
+.timeline-right :nth-of-type(4) ::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: rgb(167, 161, 161);
+  left: 3px;
+  top: 0;
+  z-index: 0;
+}
 
 
-                                  .progressBarCustom {
-                                    position: relative;
-                                    width: 200px;
-                                    height: 200px;
-                                    border-radius: 50%;
-                                    background:
-                                      radial-gradient(closest-side, white 79%, transparent 80% 100%),
-                                      conic-gradient(hotpink 75%, pink 0);
-                                  }
 
-                                  .progressBarTitle {
-                                    position: absolute;
-                                    left: 25px;
-                                    top: 25px;
-                                    font-weight: bold;
-                                  }
+.servicesSection {
+  background: rgb(255, 144, 0);
+  color: white;
+  text-align: center;
+}
 
-                                  .workSection {
-                                    background: rgb(255, 144, 0);
-                                    color: white;
-                                    text-align: center;
-                                  }
-
-                                  .cards {
-
-                                    transition: all 0.5s ease;
-                                    cursor: pointer;
+.serviceIcon {
+  height: 50px;
+  width: 50px;
+  background: white;
+  color: #ff9000;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
-                                  }
+.progressBarCustom {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background:
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(hotpink 75%, pink 0);
+}
 
-                                  .cards:hover {
+.progressBarTitle {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  font-weight: bold;
+}
 
-                                    box-shadow: 5px 6px 6px 2px #5e6164;
-                                    transform: scale(1.1);
-                                  }
+.workSection {
+  background: rgb(255, 144, 0);
+  color: white;
+  text-align: center;
+}
+
+.desc {
+  display: none;
+
+}
+
+.workSectionCard:hover .desc {
+  display: block;
+  opacity: 1;
+}
+
+.workSectionCard:hover .workSectionFigure {
+  display: none;
+}
+
+.footerSection {
+  background: rgb(255, 144, 0);
+  color: white;
+  height: 300px;
+}
+
+.backToTop {
+  position: fixed;
+  border-radius: 50%;
+  bottom: 20px;
+  float: inline-end;
+  right: 30px;
+  z-index: 1;
+  cursor: pointer;
+  padding: 15px;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 0.5s ease;
+}
+
+.backToTopIcon {
+  height: 50px;
+  width: 50px;
+  background: black;
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
